@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <div><input type="number" name="left" /></div>
+    <div><input type="number" name="right" /></div>
+    <div><input type="submit" /></div>
+</form>
+
+@if (ViewData["result"] != null)
+            {
+<output id="result">@ViewData["result"]</output>
+            }
